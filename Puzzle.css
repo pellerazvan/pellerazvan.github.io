@@ -1,0 +1,50 @@
+body {
+    font-family:verdana, sans-serif;
+
+}
+h1 {
+    font-size:1.5em;
+}
+.meta {
+    font-size:0.6em;
+    display: none;
+}
+#board {
+    width:480px;
+    height:480px;
+    padding:20px;
+    background-color:#003366;
+    margin-top:15px;
+}
+ul, li {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.tile {
+    display:block;
+    width:160px;
+    height:160px;
+    float:left;
+    margin:0px;
+    background-color:#eee;
+    line-height:160px;
+    text-align:center;
+    background-image:url(Images/Puzzle.jpg);
+}
+
+.tile.tile-0 {background-image:none;}
+.tile.tile-1 {background-position:-160px 0;}
+.tile.tile-2 {background-position:-320px 0;}
+
+.tile.tile-3 {background-position:0 -160px;}
+.tile.tile-4 {background-position:-160px -160px;}
+.tile.tile-5 {background-position:-320px -160px;}
+
+.tile.tile-6 {background-position:0 -320px;}
+.tile.tile-7 {background-position:-160px -320px;}
+.tile.tile-8 {background-position:-320px -320px;}
+p {
+    margin:0;
+}
+.reset {margin-top:1em;}
