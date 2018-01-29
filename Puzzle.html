@@ -1,10 +1,66 @@
+<!DOCTYPE html>
+
 <html>
-  
+
 <head>
-	<link rel="stylesheet" type="text/css" href="Puzzle.css"/>
-	<title>Image Puzzle</title>
+
+<title>Australia</title>
+
+<style>
+  body {background-color: #59A5F3;}
+  t1 {font-family: "Showcard Gothic";font-size: 60px;color: #BF6900;} 
+  t2 {font-family: "Brush Script MT";font-size: 45px;color: #003366;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BF6900;
+    font-family: Brush Script MT;
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    width: 80px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FF6900;
+}
+
+</style>
+
 </head>
+
 <body>
+
+<t1><div align="center">AUSTRALIA</div></t1>
+<hr align="center" size="8" noshadow color="#BF6900">
+<nav>
+<ul>
+  <li><a href="index.html" target="_self">Home</a></li>
+  <li><a href="Puzzle.html" target="_self">Game</a></li>
+</ul>
+</nav>
+<br>
+
+<article id="game">
+<t2><div align="center">Solve the Mini Puzzle to obtain an image of the beautiful red desert of Australia.</div></t2>
+
+<br>
+<div align="center">
+	<link rel="stylesheet" type="text/css" href="Puzzle.css"/>
 	<div class="meta">
 	    <p>Get the tiles in order from 0 to 8.
 		<br />Board size is: <span id="board-size"></span></p>
@@ -17,7 +73,14 @@
 	<p>The current array: <span id="shuffled-tiles"></span></p>
 	</div>
 	<section id="board"></section>
-	<input class="reset" type="button" value="Start Again" onClick="window.location.reload()">
+	<input class="reset" type="button" style="background-color: #BAD5F1;color: #003366;font-family: 'Calibri';font-size: 23px;font-weight: bold;padding: 16px 30px;border-radius: 8px;border: 4px solid #003366;" value="Restart" onClick="location.reload()">	
 	<script type="text/javascript" src="Puzzle.js"></script>
-  </body>
+</div>
+</article>
+
+<br><hr align="center" size="8" noshadow color="#BF6900">
+<t2><div align="center">This site was offered to you by Pelle Razvan Petru.</div></t2>
+
+</body>
+
 </html>
