@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -8,6 +10,35 @@
   body {background-color: #59A5F3;}
   t1 {font-family: "Showcard Gothic";font-size: 60px;color: #BF6900;} 
   t2 {font-family: "Brush Script MT";font-size: 45px;color: #003366;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BF6900;
+    font-family: Brush Script MT;
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    width: 80px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FF6900;
+}
+
 </style>
 
 </head>
@@ -16,6 +47,16 @@
 
 <t1><div align="center">AUSTRALIA</div></t1>
 <hr align="center" size="8" noshadow color="#BF6900">
+
+<nav>
+<ul>
+  <li><a href="index.html" target="_self">Home</a></li>
+  <li><a href="Puzzle.html" target="_self">Game</a></li>
+</ul>
+</nav>
+<br>
+
+<article id="home">
 <t2><div align="center">Click on the map's elements to view informations about each one.</div></t2><br>
 <div align="center"><img src="Images/Australia_map.jpg" alt="Australia Animated Map" style="margin-right: 20px;" usemap="#australia"><iframe src="Window.html" style="border:6px dashed #003366;height: 600px;width: 500px;" name="window" ></iframe></div>
 
@@ -77,30 +118,7 @@
   <area shape="rect" coords="425, 480, 470, 510" alt="Rocks" href="Australia.html" target="window">
   <area shape="rect" coords="430, 520, 480, 580" alt="Boat" href="Australia.html" target="window">
 </map>
-
-<br><br><hr align="center" size="8" noshadow color="#003366">
-
-<t2><div align="center">Solve the Mini Puzzle to obtain an image of the beautiful red desert of Australia.</div></t2>
-<!--Minigame-->
-<br>
-<div align="center">
-	<link rel="stylesheet" type="text/css" href="Puzzle.css"/>
-	<div class="meta">
-	    <p>Get the tiles in order from 0 to 8.
-		<br />Board size is: <span id="board-size"></span></p>
-	    <p>You have a total of: <span id="total-tiles"></span></p>
-	    <p>My tile is: <span id="my-tile"></span></p>
-	    <p>My tile index pos is: <span id="my-tile-pos"></span></p>
-	    <p>Blank tile index pos is: <span id="blank-tile-pos"></span></p>
-	    <p>Are they sorted?: <span id="ask-sorted"></span></p>
-
-	<p>The current array: <span id="shuffled-tiles"></span></p>
-	</div>
-	<section id="board"></section>
-	<input class="reset" type="button" style="background-color: #BAD5F1;color: #003366;font-family: 'Calibri';font-size: 23px;font-weight: bold;padding: 16px 30px;border-radius: 8px;border: 4px solid #003366;" value="Restart" onClick="location.reload()">
-	<script type="text/javascript" src="Puzzle.js"></script>
-</div>
-
+</article>
 <br><hr align="center" size="8" noshadow color="#BF6900">
 <t2><div align="center">This site was offered to you by Pelle Razvan Petru.</div></t2>
 
